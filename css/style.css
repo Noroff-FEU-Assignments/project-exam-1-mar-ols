@@ -44,6 +44,12 @@ header {
   font-size: 40px;
 }
 
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 .index-h2 {
   font-size: 25px;
   color: #fff;
@@ -74,8 +80,6 @@ nav {
 
 nav a {
   display: block;
-  color: inherit;
-  text-decoration: none;
   font-size: 30px;
   padding: 10px;
 }
