@@ -1,8 +1,6 @@
 const getDownArrow = document.querySelector(".fa-angle-down");
-const getTest = document.querySelector(".test");
-
-console.log(getDownArrow);
+const introContainer = document.querySelector(".intro-container");
 
 getDownArrow.addEventListener("click", () => {
-  getTest.scrollIntoView();
+  introContainer.scrollIntoView();
 });
