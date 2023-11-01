@@ -1,69 +1,94 @@
+/* Mobile styling */
+
 .scroll-container {
   position: absolute;
   bottom: 10vh;
   left: 50%;
+  cursor: pointer;
 }
 
-.intro-container {
-  position: absolute;
-  top: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
+.index-content {
+  margin-top: 90vh;
 }
 
 .intro {
   padding: 1rem;
   max-width: 90%;
+  margin: auto;
 }
 
-.frame {
+/* CSS for carousel on index.html */
+
+.product {
   position: relative;
+  overflow: hidden;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
 }
 
-.frame:before,
-.frame:after,
-.frame :first-child:before,
-.frame :first-child:after {
-  position: absolute;
-  content: " ";
+.product-category {
+  text-align: center;
+  padding: 0 10vw;
+  font-size: 30px;
+  margin-bottom: 40px;
 }
 
-.frame:before,
-.frame:after {
-  height: 50px;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-  left: 0px;
-  right: 0px;
+.product-container {
+  display: flex;
+  overflow-x: hidden;
 }
 
-.frame :first-child:before,
-.frame :first-child:after {
+.product-card {
+  flex: 0 0 auto;
+  max-width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev-btn,
+.nxt-btn {
+  border: none;
   width: 50px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  cursor: pointer;
+  z-index: 9;
+  opacity: 0.6;
 }
 
-.frame:before,
-.frame :first-child:before,
-.frame :first-child:after {
-  top: 0px;
+.prev-btn:hover,
+.nxt-btn:hover {
+  opacity: 1;
 }
 
-.frame:after,
-.frame :first-child:before,
-.frame :first-child:after {
-  bottom: 0px;
+.prev-btn {
+  left: 0;
 }
 
-.frame :first-child:before {
-  left: 0px;
+.nxt-btn {
+  right: 0;
 }
 
-.frame :first-child:after {
-  right: 0px;
-}
+/* CSS for blogs.html */
 
 .blog-container {
   background-color: rgba(0, 0, 0, 0.8);
@@ -85,17 +110,14 @@
   padding-bottom: 2rem;
 }
 
-@media (min-width: 1100px) {
-  .intro-container {
-    left: 50%;
-    transform: translate(-50%);
-  }
+/* Desktop styling */
 
+@media (min-width: 1100px) {
   .intro {
-    padding: 1rem;
-    min-width: 700px;
     max-width: 1000px;
   }
+
+  /* CSS for blogs.html */
 
   .blog-h1,
   .blog-container h3 {

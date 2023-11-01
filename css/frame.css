@@ -1,0 +1,47 @@
+.frame {
+  position: relative;
+}
+
+.frame:before,
+.frame:after,
+.frame :first-child:before,
+.frame :first-child:after {
+  position: absolute;
+  content: " ";
+}
+
+.frame:before,
+.frame:after {
+  height: 50px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  left: 0px;
+  right: 0px;
+}
+
+.frame :first-child:before,
+.frame :first-child:after {
+  width: 50px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.frame:before,
+.frame :first-child:before,
+.frame :first-child:after {
+  top: 0px;
+}
+
+.frame:after,
+.frame :first-child:before,
+.frame :first-child:after {
+  bottom: 0px;
+}
+
+.frame :first-child:before {
+  left: 0px;
+}
+
+.frame :first-child:after {
+  right: 0px;
+}

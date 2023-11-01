@@ -1,4 +1,5 @@
 const wpAPI = "https://blog.m-boe.com/wp-json/wp/v2/posts/";
+const pagesAPI = "https://blog.m-boe.com/wp-json/wp/v2/pages/";
 
 export async function fetchPosts() {
   const response = await fetch(wpAPI);
@@ -28,4 +29,16 @@ export async function fetchBlog() {
   const result = await response.json();
 
   return result;
+}
+
+export async function fetchPages() {
+  const response = await fetch(pagesAPI);
+
+  const result = await response.json();
+
+  if (response.ok) {
+    return result;
+  } else {
+    throw new Error("Failed to get pages!");
+  }
 }
