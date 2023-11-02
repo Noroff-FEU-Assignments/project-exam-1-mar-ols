@@ -15,11 +15,15 @@ async function displayBlogs() {
                                       <div class="excerpt">
                                         <p>${blog.date}</p>
                                         <p>${blog.excerpt.rendered}</p>
-                                        <a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}" class="">Click to see more..</a>
+                                        <a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}">Click to see more..</a>
                                       </div>
-                                    </div>  
+                                    </div> 
                                   </div>`;
     });
+
+    // const getBlogDate = document.querySelector(".excerpt").children;
+    // const getFirstChild = getBlogDate[0];
+    // console.log(getFirstChild);
   } catch {}
 }
 
