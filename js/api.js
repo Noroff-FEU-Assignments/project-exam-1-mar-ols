@@ -30,15 +30,3 @@ export async function fetchBlog() {
 
   return result;
 }
-
-export async function fetchPages() {
-  const response = await fetch(pagesAPI);
-
-  const result = await response.json();
-
-  if (response.ok) {
-    return result;
-  } else {
-    throw new Error("Failed to get pages!");
-  }
-}

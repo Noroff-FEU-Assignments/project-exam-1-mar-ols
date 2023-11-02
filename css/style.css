@@ -26,6 +26,12 @@ body {
   color: #fff;
 }
 
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 header {
   background-color: #000;
   opacity: 0.8;
@@ -43,17 +49,12 @@ header {
   margin: 30px 20px;
 }
 
-.index-h1 {
+.text-logo {
   font-size: 40px;
+  font-weight: 600;
 }
 
-a,
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
-.index-h2 {
+.index-h1 {
   font-size: 25px;
   color: #fff;
   position: absolute;
@@ -110,11 +111,11 @@ footer {
     display: block;
   }
 
-  .index-h1 {
+  .text-logo {
     display: none;
   }
 
-  .index-h2 {
+  .index-h1 {
     color: #000;
     top: 45vh;
     left: auto;
@@ -154,11 +155,6 @@ footer {
     display: inline-block;
     padding: 1rem;
     margin-right: 3rem;
-  }
-
-  .index-h2 {
-    top: 45vh;
-    right: 10vw;
   }
 }
 
