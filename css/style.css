@@ -26,6 +26,17 @@ body {
   color: #fff;
 }
 
+.cta {
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  margin: 3rem;
+  font-family: inherit;
+  color: #fff;
+  background-color: #090909;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
 a,
 a:visited {
   color: inherit;

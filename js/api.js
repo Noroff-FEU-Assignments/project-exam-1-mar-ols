@@ -1,5 +1,5 @@
-const wpAPI = "https://blog.m-boe.com/wp-json/wp/v2/posts/";
-const pagesAPI = "https://blog.m-boe.com/wp-json/wp/v2/pages/";
+export const wpAPI = "https://blog.m-boe.com/wp-json/wp/v2/posts/";
+const pagesAPI = "https://blog.m-boe.com/wp-json/wp/v2/posts?per_page=2";
 
 export async function fetchPosts() {
   const response = await fetch(wpAPI);

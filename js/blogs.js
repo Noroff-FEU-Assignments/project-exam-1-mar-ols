@@ -21,6 +21,20 @@ async function displayBlogs() {
                                   </div>`;
     });
 
+    const getLoadMore = document.querySelector(".load-more");
+
+    // getLoadMore.addEventListener("click", () => {
+    //   async function tenMore() {
+    //     const response = await fetch(
+    //       "https://blog.m-boe.com/wp-json/wp/v2/posts?per_page=2&offset=2"
+    //     );
+
+    //     const result = await response.json();
+    //     blogContainer.innerHTML += `${result}`;
+    //   }
+    //   tenMore();
+    // });
+
     // const getBlogDate = document.querySelector(".excerpt").children;
     // const getFirstChild = getBlogDate[0];
     // console.log(getFirstChild);

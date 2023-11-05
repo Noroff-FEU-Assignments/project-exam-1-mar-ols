@@ -19,7 +19,7 @@
 
 /* CSS for carousel on index.html */
 
-.product {
+.carousel-container {
   position: relative;
   overflow: hidden;
   padding: 20px;
@@ -27,33 +27,33 @@
   margin: auto;
 }
 
-.product-category {
+.carousel-header {
   text-align: center;
   padding: 0 10vw;
   font-size: 30px;
   margin-bottom: 40px;
 }
 
-.product-container {
+.inner-carousel {
   display: flex;
   overflow-x: hidden;
 }
 
-.product-card {
+.blog-card {
   flex: 0 0 auto;
   max-width: 250px;
   height: 450px;
   margin-right: 40px;
 }
 
-.product-image {
+.blog-img {
   position: relative;
   width: 100%;
   height: 350px;
   overflow: hidden;
 }
 
-.product-thumb {
+.blog-thumb {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -112,6 +112,11 @@
   padding-bottom: 2rem;
 }
 
+.view-more {
+  max-width: 300px;
+  margin: auto;
+}
+
 /* CSS for single-blog.html */
 
 .single-blog-container {
@@ -130,16 +135,27 @@
 }
 
 .single-blog-container img {
-  max-width: 300px;
   height: auto;
   margin: 0;
+  cursor: zoom-in;
 }
 
-.wp-block-image,
 .wp-block-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: auto;
+  max-width: 700px;
+}
+
+.wp-block-image {
+  max-width: 300px;
+  margin: auto;
+  padding: 1rem;
+}
+
+dialog {
+  border: none !important;
+  background-color: #000;
 }
 
 /* Desktop styling */
