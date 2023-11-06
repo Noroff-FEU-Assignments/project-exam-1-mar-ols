@@ -9,14 +9,14 @@ async function displayIndexBlogs() {
 
   results.forEach((blog) => {
     getInnerCarousel.innerHTML += `<div class="blog-card">
-                                  <div class="blog-img">
-                                    <img src="${blog.better_featured_image.source_url}" alt="${blog.better_featured_image.alt_text}" class="blog-thumb"/>
-                                    <a href="html/single-blog.html?id=${blog.id}&title=${blog.title.rendered}">Click to read</a>
-                                  </div>
-                                  <div>
-                                    <h3>${blog.title.rendered}</h3>
-                                  </div>
-                                </div>`;
+                                    <div class="blog-img">
+                                      <a href="html/single-blog.html?id=${blog.id}&title=${blog.title.rendered}"><img src="${blog.better_featured_image.source_url}" alt="${blog.better_featured_image.alt_text}" class="blog-thumb"/></a>
+                                    </div>
+                                    <div>
+                                      <p>${blog.title.rendered}</p>
+                                      <h4><a href="html/single-blog.html?id=${blog.id}&title=${blog.title.rendered}">Read more..</a></h4>
+                                    </div>
+                                  </div>`;
   });
 
   const getDownArrow = document.querySelector(".fa-angle-down");

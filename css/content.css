@@ -1,4 +1,4 @@
-/* Mobile styling */
+/* Mobile/tablet styling */
 
 .scroll-container {
   position: absolute;
@@ -13,103 +13,23 @@
 
 .intro {
   padding: 1rem;
-  max-width: 90%;
   margin: auto;
-}
-
-/* CSS for carousel on index.html */
-
-.carousel-container {
-  position: relative;
-  overflow: hidden;
-  padding: 20px;
-  width: 60%;
-  margin: auto;
-}
-
-.carousel-header {
-  text-align: center;
-  padding: 0 10vw;
-  font-size: 30px;
-  margin-bottom: 40px;
-}
-
-.inner-carousel {
-  display: flex;
-  overflow-x: hidden;
-}
-
-.blog-card {
-  flex: 0 0 auto;
-  max-width: 250px;
-  height: 450px;
-  margin-right: 40px;
-}
-
-.blog-img {
-  position: relative;
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
-}
-
-.blog-thumb {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.prev-btn,
-.nxt-btn {
-  border: none;
-  width: 50px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  cursor: pointer;
-  z-index: 9;
-  opacity: 0.6;
-}
-
-.prev-btn:hover,
-.nxt-btn:hover {
-  opacity: 1;
-}
-
-.prev-btn {
-  left: 0;
-}
-
-.nxt-btn {
-  right: 0;
 }
 
 /* CSS for blogs.html */
 
-.blogs-main,
-.single-blog-container {
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 1px solid #fff;
-  margin: 2rem;
-  padding: 4rem 2rem;
-}
-
 .blogs {
   max-width: 80%;
-  margin: 80px auto;
-}
-
-.excerpt {
-  max-width: 900px;
+  margin: 50px auto;
 }
 
 .individual-blog-container {
   border-bottom: 1px solid #fff;
   padding-bottom: 2rem;
+}
+
+.blog-link {
+  text-decoration: underline;
 }
 
 .view-more {
@@ -119,14 +39,8 @@
 
 /* CSS for single-blog.html */
 
-.single-blog-container {
-  max-width: 90%;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-.single-blog-container h1 {
-  text-align: center;
+.single-blog {
+  padding: 2rem;
 }
 
 .single-blog-container p {
@@ -134,10 +48,15 @@
   margin: auto;
 }
 
+.blog-date {
+  padding-bottom: 1rem;
+}
+
 .single-blog-container img {
   height: auto;
   margin: 0;
   cursor: zoom-in;
+  border: 1px solid;
 }
 
 .wp-block-gallery {
@@ -158,10 +77,35 @@ dialog {
   background-color: #000;
 }
 
+/* CSS for about.html */
+
+.blog-h1,
+.blogs-intro,
+.about-container h1,
+.single-blog-container h1 {
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-content > * {
+  flex: 1;
+}
+
+.about,
+.img-container {
+  padding: 2rem;
+  max-width: 600px;
+}
+
 /* Desktop styling */
 
 @media (min-width: 1100px) {
-  .intro {
+  .intro,
+  .blog-h1,
+  .blogs-intro {
     max-width: 1000px;
   }
 
@@ -169,41 +113,28 @@ dialog {
 
   .blog-featured-image {
     overflow: hidden;
-    min-height: 300px;
+    min-height: 250px;
   }
 
   .blog-featured-image img {
     margin: -300px 0px -400px 0px;
   }
-
-  .blog-h1,
-  .blogs-container h3 {
-    text-align: center;
-    max-width: 1000px;
-    margin: 30px auto;
-  }
-
-  .blogs {
-    max-width: 80%;
-    margin: 80px auto;
-  }
-
-  /* CSS for single-blog.html */
-
-  .single-blog-container {
-    max-width: 1000px;
-  }
 }
 
-@media (max-width: 500px) {
+/* Additional styling for smaller resolutions */
+
+@media (max-width: 600px) {
+  .single-blog {
+    padding: 1rem;
+  }
+
   .blogs {
     max-width: 100%;
-    margin: 80px auto;
   }
 }
 
-@media (max-width: 340px) {
+/* @media (max-width: 400px) {
   .single-blog-container img {
     max-width: 200px;
   }
-}
+} */

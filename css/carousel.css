@@ -1,0 +1,66 @@
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  padding: 25px;
+  width: 50%;
+  margin: auto;
+}
+
+.carousel-header {
+  text-align: center;
+  font-size: 30px;
+}
+
+.inner-carousel {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.blog-card {
+  flex: 0 0 auto;
+  max-width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.blog-img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.blog-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev-btn,
+.nxt-btn {
+  border: none;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  cursor: pointer;
+  z-index: 9;
+  opacity: 0.6;
+}
+
+.prev-btn:hover,
+.nxt-btn:hover {
+  opacity: 1;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.nxt-btn {
+  right: 0;
+}

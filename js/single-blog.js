@@ -11,7 +11,7 @@ async function displaySingleBlog() {
   singleBlogContainer.innerHTML = `<div class="single-blog frame">
                                      <h1>${blog.title.rendered}</h1>
                                      <div>
-                                       <p>${blog.date}</p>
+                                       <p class="blog-date">${blog.date}</p>
                                        <p>${blog.content.rendered}</p>
                                        <dialog class="modal-container">
                                        <p class="inner-modal"></p>

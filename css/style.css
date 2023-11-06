@@ -1,5 +1,6 @@
 @import url(content.css);
 @import url(frame.css);
+@import url(carousel.css);
 
 @font-face {
   font-family: "Jura";
@@ -43,9 +44,16 @@ a:visited {
   text-decoration: none;
 }
 
+.background {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #fff;
+  padding: 4rem 2rem;
+  margin: 1rem auto;
+  max-width: 90%;
+}
+
 header {
-  background-color: #000;
-  opacity: 0.8;
+  background-color: rgb(9, 9, 9, 0.9);
   padding: 0rem 2rem;
 }
 
@@ -76,6 +84,7 @@ header {
 
 .ham-menu {
   padding-bottom: 1rem;
+  max-width: 50px;
 }
 
 nav,
@@ -86,11 +95,12 @@ nav,
 
 #menu-checkbox:checked ~ nav {
   display: block;
+  z-index: 10;
 }
 
 nav {
   position: absolute;
-  background-color: #000;
+  background-color: rgb(20, 20, 20, 1);
 }
 
 nav a {
@@ -118,6 +128,10 @@ footer {
 }
 
 @media (min-width: 1100px) {
+  nav {
+    background-color: transparent;
+  }
+
   .logo-img {
     display: block;
   }
@@ -167,6 +181,10 @@ footer {
     padding: 1rem;
     margin-right: 3rem;
   }
+
+  .background {
+    max-width: 1000px;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -179,7 +197,11 @@ footer {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 400px) {
+  h1 {
+    font-size: 25px;
+  }
+
   .anchor {
     display: none;
   }

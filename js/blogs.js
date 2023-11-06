@@ -8,14 +8,14 @@ async function displayBlogs() {
       blogContainer.innerHTML += `<div class="blogs">
                                     <div class="individual-blog-container">
                                       <a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}">
-                                      <h1>${blog.title.rendered}</h1></a>
+                                      <h2>${blog.title.rendered}</h2></a>
                                       <div class="blog-featured-image">
                                         <img src="${blog.better_featured_image.source_url}" alt="${blog.better_featured_image.alt_text}">
                                       </div>
                                       <div class="excerpt">
                                         <p>${blog.date}</p>
                                         <p>${blog.excerpt.rendered}</p>
-                                        <a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}">Click to see more..</a>
+                                        <h3><a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}" class="blog-link">Read more..</a></h3>
                                       </div>
                                     </div> 
                                   </div>`;
