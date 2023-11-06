@@ -13,7 +13,7 @@
 
 .intro {
   padding: 1rem;
-  margin: auto;
+  margin: 1rem;
 }
 
 /* CSS for blogs.html */
@@ -109,6 +109,10 @@ dialog {
     max-width: 1000px;
   }
 
+  .intro {
+    margin: auto;
+  }
+
   /* CSS for blogs.html */
 
   .blog-featured-image {
@@ -124,6 +128,10 @@ dialog {
 /* Additional styling for smaller resolutions */
 
 @media (max-width: 600px) {
+  .blog-img {
+    max-height: 180px;
+  }
+
   .single-blog {
     padding: 1rem;
   }
@@ -133,8 +141,24 @@ dialog {
   }
 }
 
-/* @media (max-width: 400px) {
-  .single-blog-container img {
-    max-width: 200px;
+@media (max-width: 500px) {
+  button.prev-btn,
+  button.nxt-btn {
+    display: none;
   }
-} */
+
+  .index-content > .carousel-container {
+    overflow: visible;
+    padding: 0;
+    margin-left: 25px;
+  }
+
+  .carousel-container > .inner-carousel {
+    overflow: visible;
+    flex-wrap: wrap;
+  }
+
+  /* .single-blog-container img {
+    max-width: 200px;
+  } */
+}
