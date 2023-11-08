@@ -1,4 +1,5 @@
 import { fetchBlog, title } from "./api.js";
+import { error } from "./error.js";
 
 async function displaySingleBlog() {
   try {
@@ -10,7 +11,7 @@ async function displaySingleBlog() {
     const titleContainer = document.querySelector("#title");
     titleContainer.textContent =
       singleBlogContainer.innerHTML = `Voyaging North - ${title}`;
-    const getLoaderDiv = document.querySelector(".loader-container");
+    const getLoaderDiv = document.querySelector(".loader");
     getLoaderDiv.innerHTML = " ";
 
     singleBlogContainer.innerHTML = `<div class="single-blog frame">
@@ -22,7 +23,9 @@ async function displaySingleBlog() {
                                        <div class="inner-modal"></div>
                                        </dialog>
                                      </div>
-                                     <button type="button" class="cta back-blog">Go back</button>
+                                     <div class="backBtn-container">
+                                       <button type="button" class="cta back-blog">Go back</button>
+                                     </div>
                                    </div>`;
 
     const getImages = document.querySelectorAll(".wp-block-image");
@@ -51,6 +54,7 @@ async function displaySingleBlog() {
     });
   } catch (e) {
     console.error(e);
+    error();
   }
 }
 

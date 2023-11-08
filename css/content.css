@@ -162,6 +162,10 @@ dialog {
     flex-wrap: wrap;
   }
 
+  .backBtn-container {
+    text-align: center;
+  }
+
   /* .single-blog-container img {
     max-width: 200px;
   } */

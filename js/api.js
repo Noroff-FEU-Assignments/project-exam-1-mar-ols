@@ -27,10 +27,13 @@ export const title = params.get("title");
 const singleBlogAPI = wpAPI + `/` + id;
 
 export async function fetchBlog() {
-  loader();
+  // loader();
   const response = await fetch(singleBlogAPI);
 
   const result = await response.json();
-
-  return result;
+  if (response.ok) {
+    return result;
+  } else {
+    throw new Error("Failed to get blog!");
+  }
 }

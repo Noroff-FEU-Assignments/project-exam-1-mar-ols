@@ -1,4 +1,5 @@
 import { fetchPosts } from "./api.js";
+import { error } from "./error.js";
 
 async function displayBlogs() {
   try {
@@ -42,6 +43,7 @@ async function displayBlogs() {
     // console.log(getFirstChild);
   } catch (e) {
     console.error(e);
+    error();
   }
 }
 

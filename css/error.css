@@ -1,0 +1,13 @@
+.error {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #ff1010;
+  color: #ff1010;
+  border-radius: 10px;
+}
+
+.sherlock {
+  max-width: 100px;
+  border: none !important;
+}

@@ -2,6 +2,7 @@
 @import url(frame.css);
 @import url(carousel.css);
 @import url(loader.css);
+@import url(error.css);
 
 @font-face {
   font-family: "Jura";

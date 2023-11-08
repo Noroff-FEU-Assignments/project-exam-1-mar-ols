@@ -8,6 +8,6 @@ export function loader() {
   const loaderContainer = document.createElement("div");
   loaderContainer.innerHTML = loaderHtml;
 
-  const main = document.querySelector("main");
+  const main = document.querySelector(".loader");
   main.appendChild(loaderContainer);
 }
