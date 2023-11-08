@@ -14,6 +14,21 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb {
+  background-color: #090909;
+  opacity: 0.9;
+}
+
+::-webkit-scrollbar-track {
+  background: #363636;
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-thumb {
+  border: 1px solid #fff;
+}
+
 img {
   max-width: 100%;
 }
