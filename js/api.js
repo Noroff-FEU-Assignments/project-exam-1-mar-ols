@@ -1,11 +1,10 @@
 import { loader } from "./loader.js";
 
 export const wpAPI = "https://blog.m-boe.com/wp-json/wp/v2/posts";
-const pagesAPI = "?per_page=10&page=1";
 
 export async function fetchPosts() {
   loader();
-  const response = await fetch(wpAPI + pagesAPI);
+  const response = await fetch(wpAPI);
 
   const result = await response.json();
 
