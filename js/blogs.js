@@ -13,7 +13,8 @@ async function displayBlogs() {
                                       <a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}">
                                       <h2>${blog.title.rendered}</h2></a>
                                       <div class="blog-featured-image">
-                                        <img src="${blog.better_featured_image.source_url}" alt="${blog.better_featured_image.alt_text}">
+                                      <a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}">
+                                      <img src="${blog.better_featured_image.source_url}" alt="${blog.better_featured_image.alt_text}"></a>
                                       </div>
                                       <div class="excerpt">
                                         <p>${blog.date}</p>
