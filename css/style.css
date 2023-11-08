@@ -1,6 +1,7 @@
 @import url(content.css);
 @import url(frame.css);
 @import url(carousel.css);
+@import url(loader.css);
 
 @font-face {
   font-family: "Jura";
@@ -47,7 +48,7 @@ a:visited {
 .background {
   background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid #fff;
-  padding: 4rem 2rem;
+  padding: 2rem;
   margin: 1rem auto;
   max-width: 90%;
 }

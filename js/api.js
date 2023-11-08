@@ -1,8 +1,11 @@
-export const wpAPI = "https://blog.m-boe.com/wp-json/wp/v2/posts/";
-const pagesAPI = "https://blog.m-boe.com/wp-json/wp/v2/posts?per_page=2";
+import { loader } from "./loader.js";
+
+export const wpAPI = "https://blog.m-boe.com/wp-json/wp/v2/posts";
+const pagesAPI = "?per_page=10&page=1";
 
 export async function fetchPosts() {
-  const response = await fetch(wpAPI);
+  loader();
+  const response = await fetch(wpAPI + pagesAPI);
 
   const result = await response.json();
 
@@ -21,9 +24,10 @@ const id = params.get("id");
 
 export const title = params.get("title");
 
-const singleBlogAPI = wpAPI + id;
+const singleBlogAPI = wpAPI + `/` + id;
 
 export async function fetchBlog() {
+  loader();
   const response = await fetch(singleBlogAPI);
 
   const result = await response.json();

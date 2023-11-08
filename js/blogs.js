@@ -3,6 +3,8 @@ import { fetchPosts } from "./api.js";
 async function displayBlogs() {
   try {
     const blogs = await fetchPosts();
+    const getLoaderDiv = document.querySelector(".loader-container");
+    getLoaderDiv.innerHTML = " ";
     const blogContainer = document.querySelector(".blogs-container");
     blogs.forEach((blog) => {
       blogContainer.innerHTML += `<div class="blogs">
@@ -38,7 +40,9 @@ async function displayBlogs() {
     // const getBlogDate = document.querySelector(".excerpt").children;
     // const getFirstChild = getBlogDate[0];
     // console.log(getFirstChild);
-  } catch {}
+  } catch (e) {
+    console.error(e);
+  }
 }
 
 displayBlogs();
