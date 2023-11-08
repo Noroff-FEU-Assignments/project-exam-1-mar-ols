@@ -1,4 +1,5 @@
 import { loader } from "./loader.js";
+import { error } from "./error.js";
 
 async function displayIndexBlogs() {
   try {
@@ -51,6 +52,7 @@ async function displayIndexBlogs() {
     });
   } catch (e) {
     console.error(e);
+    error();
   }
 }
 
