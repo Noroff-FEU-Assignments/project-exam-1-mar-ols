@@ -27,7 +27,7 @@ export const title = params.get("title");
 const singleBlogAPI = wpAPI + `/` + id;
 
 export async function fetchBlog() {
-  // loader();
+  loader();
   const response = await fetch(singleBlogAPI);
 
   const result = await response.json();
