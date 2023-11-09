@@ -1,6 +1,7 @@
 import { loader } from "./loader.js";
 
 export const wpAPI = "https://blog.m-boe.com/wp-json/wp/v2/posts";
+export const wpPages = "https://blog.m-boe.com/wp-json/wp/v2/pages";
 
 const queryString = document.location.search;
 
