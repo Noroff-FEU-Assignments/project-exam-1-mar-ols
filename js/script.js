@@ -1,6 +1,13 @@
 import { loader } from "./loader.js";
 import { error } from "./error.js";
 
+const getDownArrow = document.querySelector(".fa-angle-down");
+const indexContent = document.querySelector(".index-content");
+
+getDownArrow.addEventListener("click", () => {
+  indexContent.scrollIntoView();
+});
+
 async function displayIndexBlogs() {
   try {
     loader();

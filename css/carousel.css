@@ -20,8 +20,8 @@
   padding: 20px;
 }
 
-.carousel-item img {
-  border-radius: 20px;
+.carousel-item img,
+.blog-featured-image {
   border: 1px solid #fff;
 }
 
