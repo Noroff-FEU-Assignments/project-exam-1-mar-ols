@@ -146,27 +146,7 @@ dialog {
 }
 
 @media (max-width: 500px) {
-  button.prev-btn,
-  button.nxt-btn {
-    display: none;
-  }
-
-  .index-content > .carousel-container {
-    overflow: visible;
-    padding: 0;
-    margin-left: 25px;
-  }
-
-  .carousel-container > .inner-carousel {
-    overflow: visible;
-    flex-wrap: wrap;
-  }
-
   .backBtn-container {
     text-align: center;
   }
-
-  /* .single-blog-container img {
-    max-width: 200px;
-  } */
 }
