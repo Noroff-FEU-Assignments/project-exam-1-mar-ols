@@ -14,7 +14,6 @@ async function displaySingleBlog() {
       singleBlogContainer.innerHTML = `Voyaging North - ${title}`;
     const getLoaderDiv = document.querySelector(".loader");
     getLoaderDiv.innerHTML = " ";
-
     singleBlogContainer.innerHTML = `<div class="single-blog frame">
                                        <h1>${blog.title.rendered}</h1>
                                        <div>
@@ -33,9 +32,6 @@ async function displaySingleBlog() {
                                            <textarea id="comment" name="comment" required></textarea>
                                            <button type="submit" class="cta submit">Submit</button>
                                          </form>
-                                       </div>
-                                       <div class="backBtn-container">
-                                         <button type="button" class="cta back-blog">Go back</button>
                                        </div>
                                      </div>`;
 
@@ -113,13 +109,6 @@ async function displaySingleBlog() {
           document.getElementById("comment").value = "";
         });
     });
-
-    // Back button
-    const getBackBtn = document.querySelector(".back-blog");
-
-    getBackBtn.addEventListener("click", () => {
-      window.history.back();
-    });
   } catch (e) {
     console.error(e);
     error();
@@ -127,3 +116,13 @@ async function displaySingleBlog() {
 }
 
 displaySingleBlog();
+
+function backButton() {
+  const getBackBtn = document.querySelector(".back-blog");
+
+  getBackBtn.addEventListener("click", () => {
+    window.history.back();
+  });
+}
+
+backButton();

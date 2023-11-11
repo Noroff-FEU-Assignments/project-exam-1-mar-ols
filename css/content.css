@@ -4,7 +4,12 @@
   position: absolute;
   bottom: 10vh;
   left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
+}
+
+.fa-solid {
+  padding: 2rem;
 }
 
 .index-content {
@@ -116,6 +121,10 @@ button.submit {
   padding-bottom: 0.5rem;
 }
 
+.backBtn-container {
+  text-align: center;
+}
+
 /* CSS for about.html */
 
 .blog-h1,
@@ -180,11 +189,5 @@ button.submit {
 
   .blogs {
     max-width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .backBtn-container {
-    text-align: center;
   }
 }
