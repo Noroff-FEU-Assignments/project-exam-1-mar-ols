@@ -1,3 +1,4 @@
+import { wpAPI } from "./api.js";
 import { loader } from "./loader.js";
 import { error } from "./error.js";
 
@@ -11,9 +12,7 @@ getDownArrow.addEventListener("click", () => {
 async function displayIndexBlogs() {
   try {
     loader();
-    const response = await fetch(
-      "https://blog.m-boe.com/wp-json/wp/v2/posts?per_page=5&order=desc"
-    );
+    const response = await fetch(wpAPI + "?per_page=5&order=desc");
 
     const results = await response.json();
 

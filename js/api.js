@@ -1,13 +1,13 @@
 import { loader } from "./loader.js";
 
-export const wpAPI = "https://blog.m-boe.com/wp-json/wp/v2/posts";
-export const wpPages = "https://blog.m-boe.com/wp-json/wp/v2/pages";
+export const wpAPI = "https://www.m-boe.com/wp-json/wp/v2/posts";
+export const wpPages = "https://www.m-boe.com/wp-json/wp/v2/pages";
 
 const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
 
-const id = params.get("id");
+export const id = params.get("id");
 
 export const title = params.get("title");
 
