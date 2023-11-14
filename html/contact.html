@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Here you can contact me about any questions or remarks"
+      content="Here you can contact me about any questions or remarks."
     />
+    <link rel="icon" href="../images/assets/anchor-icon.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="../js/validation.js" type="module" defer></script>
     <title>Voyaging North - Contact</title>
   </head>
   <body>
@@ -43,11 +45,70 @@
         <nav>
           <a href="blogs.html">Blogs</a>
           <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="contact.html" class="active">Contact</a>
         </nav>
       </div>
     </header>
-    <main></main>
+    <main class="background">
+      <section class="contact frame">
+        <div class="contact-intro">
+          <h1>Contact Me</h1>
+          <div class="socials">
+            <a
+              href="https://www.facebook.com/profile.php?id=669089185"
+              target="_blank"
+              ><img
+                src="../images/assets/facebook-app-symbol.png"
+                alt="Facebook icon"
+            /></a>
+            <a href="https://www.instagram.com/potetluggen/" target="_blank"
+              ><img src="../images/assets/instagram.png" alt="Instagram icon"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/marte-b%C3%B8e-olsen-b538448b/"
+              target="_blank"
+              ><img src="../images/assets/linkedin.png" alt="LinkedIn icon"
+            /></a>
+          </div>
+          <p>
+            If you'd like to contact me for any reason you can either get in
+            touch with me on my socials, or fill out this form. 😊
+          </p>
+        </div>
+        <form action="./thanks.html" class="form contact-form">
+          <label for="full-name">Your name:*</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="Your name"
+          />
+          <p class="name-error">
+            Please enter a name with 5 characters or more.
+          </p>
+          <label for="enter-email">Your email-address:*</label>
+          <input
+            type="email"
+            id="enter-email"
+            name="email"
+            placeholder="Enter email address"
+          />
+          <p class="email-error">Please enter a valid email.</p>
+          <label for="message-subject">Subject:*</label>
+          <input
+            type="text"
+            id="message-subject"
+            name="subject"
+            placeholder="Subject"
+          />
+          <p class="subject-error">Subject must be 15 characters or longer.</p>
+          <label for="message">Message:*</label>
+          <textarea id="message" name="message" class="form_input"></textarea>
+          <p class="message-error">Message must be 25 characters or more</p>
+          <button type="submit" class="cta" id="submit-comment">Send</button>
+        </form>
+      </section>
+    </main>
     <footer>
       <div class="copyright">
         <p>© Marte Bøe</p>

@@ -9,7 +9,7 @@
 }
 
 .fa-solid {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .index-content {
@@ -39,9 +39,17 @@
   text-decoration: underline;
 }
 
+.more-link {
+  display: none;
+}
+
 .view-more {
-  max-width: 300px;
+  max-width: 200px;
   margin: auto;
+}
+
+button.load-more {
+  margin-bottom: 1rem;
 }
 
 /* CSS for single-blog.html */
@@ -84,7 +92,9 @@ dialog {
   max-width: 80%;
 }
 
-#comment-form {
+/* CSS for contact.html */
+
+.form {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -92,16 +102,26 @@ dialog {
   max-width: 500px;
 }
 
-#comment-form textarea {
+.contact-form {
+  padding-bottom: 3rem;
+}
+
+.form textarea {
   height: 150px;
 }
 
-#comment-form label {
+.form label {
   padding: 0.5rem 0;
 }
 
-button.submit {
+.form input {
+  padding: 0.5rem;
+}
+
+button.submit,
+#submit-comment {
   margin: 0;
+  cursor: pointer;
 }
 
 #comments-container {
@@ -121,21 +141,28 @@ button.submit {
   padding-bottom: 0.5rem;
 }
 
-.backBtn-container {
-  text-align: center;
+.thank-you {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* CSS for about.html */
 
 .blog-h1,
+.contact h1,
 .blogs-intro,
+.contact-intro,
+.backBtn-container,
 .about-container h1,
 .single-blog-container h1 {
   text-align: center;
 }
 
 .about,
-.img-container {
+.img-container,
+.contact-intro {
   padding: 2rem;
   max-width: 600px;
   margin: 0.5rem auto;
@@ -189,5 +216,9 @@ button.submit {
 
   .blogs {
     max-width: 100%;
+  }
+
+  .blogs h2 {
+    font-size: 18px;
   }
 }

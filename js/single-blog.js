@@ -25,7 +25,7 @@ async function displaySingleBlog() {
                                        </div>
                                        <div id="comments-container"></div>
                                        <div>
-                                         <form id="comment-form">
+                                         <form id="comment-form" class="form">
                                            <label for="author">Name:*</label>
                                            <input type="text" id="author" name="author" required>
                                            <label for="comment">Comment:*</label>
