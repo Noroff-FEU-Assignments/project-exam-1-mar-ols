@@ -24,3 +24,6 @@ export async function fetchBlog() {
     throw new Error("Failed to get blog!");
   }
 }
+
+export const commentsAPI =
+  "https://www.m-boe.com/wp-json/wp/v2/comments?post=" + id;

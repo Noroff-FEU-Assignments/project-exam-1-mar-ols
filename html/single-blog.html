@@ -50,10 +50,22 @@
       </div>
     </header>
     <main class="background">
-      <div class="single-blog-container loader errors"></div>
-      <div class="backBtn-container">
-        <button type="button" class="cta back-blog">Go back</button>
-      </div>
+      <section class="frame singleBlog-section">
+        <div class="single-blog-container loader errors"></div>
+        <div id="comments-container"></div>
+        <div>
+          <form id="comment-form" class="form">
+            <label for="author">Name:*</label>
+            <input type="text" id="author" name="author" required />
+            <label for="comment">Comment:*</label>
+            <textarea id="comment" name="comment" required></textarea>
+            <button type="submit" class="cta submit">Submit</button>
+          </form>
+        </div>
+        <div class="backBtn-container">
+          <button type="button" class="cta back-blog">Go back</button>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="copyright">

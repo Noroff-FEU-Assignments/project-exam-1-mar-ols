@@ -92,6 +92,10 @@ dialog {
   max-width: 80%;
 }
 
+.backBtn-container {
+  padding-bottom: 3rem;
+}
+
 /* CSS for contact.html */
 
 .form {
