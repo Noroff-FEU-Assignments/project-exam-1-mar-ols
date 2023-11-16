@@ -33,6 +33,7 @@
   padding: 2rem;
   background-color: #141414;
   opacity: 0.9;
+  box-shadow: 5px 8px rgba(255, 255, 255, 0.8);
 }
 
 .blog-link {
@@ -93,7 +94,7 @@ dialog {
 }
 
 .backBtn-container {
-  padding-bottom: 3rem;
+  padding: 2rem;
 }
 
 /* CSS for contact.html */
@@ -124,7 +125,7 @@ dialog {
 
 button.submit,
 #submit-comment {
-  margin: 0;
+  margin: 0 0 3rem;
   cursor: pointer;
 }
 

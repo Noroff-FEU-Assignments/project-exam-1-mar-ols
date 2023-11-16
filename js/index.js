@@ -1,6 +1,6 @@
-import { wpAPI } from "./api.js";
-import { loader } from "./loader.js";
-import { error } from "./error.js";
+import { wpAPI } from "./functions/api.js";
+import { loader } from "./functions/loader.js";
+import { error } from "./functions/error.js";
 
 const getDownArrow = document.querySelector(".fa-angle-down");
 const indexContent = document.querySelector(".index-content");

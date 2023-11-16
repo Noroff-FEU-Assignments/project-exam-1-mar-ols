@@ -1,5 +1,5 @@
-import { wpAPI } from "./api.js";
-import { error } from "./error.js";
+import { wpAPI } from "./functions/api.js";
+import { error } from "./functions/error.js";
 
 const blogsContainer = document.querySelector(".blogs-container");
 const loadMoreButton = document.querySelector(".load-more");
@@ -17,6 +17,14 @@ function fetchAndDisplayBlogs() {
     .then((response) => response.json())
     .then((result) => {
       result.forEach((blog) => {
+        const wpDate = blog.date;
+
+        let neaterDate = new Date(wpDate).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "2-digit",
+        });
+
         blogsContainer.innerHTML += `<div class="blogs">
                                        <div class="individual-blog-container">
                                          <a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}">
@@ -26,7 +34,7 @@ function fetchAndDisplayBlogs() {
                                          <img src="${blog.better_featured_image.source_url}" alt="${blog.better_featured_image.alt_text}"></a>
                                        </div>
                                        <div class="excerpt">
-                                         <p>${blog.date}</p>
+                                         <p>${neaterDate}</p>
                                          <p>${blog.excerpt.rendered}</p>
                                          <h3><a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}" class="blog-link">Read more..</a></h3>
                                        </div> 

@@ -1,7 +1,8 @@
-import { fetchBlog, title, id } from "./api.js";
-import { fetchDisplayExistingComments } from "./existingComments.js";
-import { createSubmitNewComments } from "./newComments.js";
-import { error } from "./error.js";
+import { fetchBlog, title } from "./functions/api.js";
+import { fetchDisplayExistingComments } from "./functions/existingComments.js";
+import { createSubmitNewComments } from "./functions/newComments.js";
+import { makeNewDate } from "./functions/newDate.js";
+import { error } from "./functions/error.js";
 
 async function displaySingleBlog() {
   try {
@@ -19,7 +20,7 @@ async function displaySingleBlog() {
     singleBlogContainer.innerHTML = `<div class="single-blog">
                                        <h1>${blog.title.rendered}</h1>
                                        <div>
-                                         <p class="blog-date">${blog.date}</p>
+                                         <p class="blog-date">${await makeNewDate()}</p>
                                          <p>${blog.content.rendered}</p>
                                          <dialog class="modal-container">
                                          <div class="inner-modal"></div>
