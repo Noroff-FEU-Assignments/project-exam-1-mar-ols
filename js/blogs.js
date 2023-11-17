@@ -31,12 +31,12 @@ async function fetchAndDisplayBlogs() {
                                          <a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}">
                                          <img src="${blog.better_featured_image.source_url}" alt="${blog.better_featured_image.alt_text}"></a>
                                        </div>
+                                       <div class="excerpt">
+                                         <p>${neaterDate}</p>
+                                         <p>${blog.excerpt.rendered}</p>
+                                         <h3><a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}" class="blog-link">Read more..</a></h3>
+                                       </div> 
                                      </div>
-                                     <div class="excerpt">
-                                       <p>${neaterDate}</p>
-                                       <p>${blog.excerpt.rendered}</p>
-                                       <h3><a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}" class="blog-link">Read more..</a></h3>
-                                     </div> 
                                    </div>`;
     });
 
