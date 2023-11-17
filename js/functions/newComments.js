@@ -2,7 +2,6 @@ import { commentsAPI, id } from "./api.js";
 
 export async function createSubmitNewComments() {
   try {
-    // Creating and submitting new comments
     const commentForm = document.getElementById("comment-form");
     commentForm.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -29,9 +28,9 @@ export async function createSubmitNewComments() {
             document.getElementById("comments-container");
           const commentElement = document.createElement("div");
           commentElement.innerHTML = `<div class="single-comment">
-                                    <p class="comment-author">${comment.author_name}:</p>
-                                    <p>${comment.content.rendered}</p>
-                                  </div>`;
+                                        <p class="comment-author">${comment.author_name}:</p>
+                                        <p>${comment.content.rendered}</p>
+                                      </div>`;
 
           commentsContainer.appendChild(commentElement);
           document.getElementById("author").value = "";
