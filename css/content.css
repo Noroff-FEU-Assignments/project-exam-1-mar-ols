@@ -55,7 +55,8 @@ button.load-more {
 
 /* CSS for single-blog.html */
 
-.single-blog {
+.single-blog,
+.backBtn-container {
   padding: 2rem;
 }
 
@@ -93,11 +94,7 @@ dialog {
   max-width: 80%;
 }
 
-.backBtn-container {
-  padding: 2rem;
-}
-
-/* CSS for contact.html */
+/* CSS for contact.html and comments on single-blog.html */
 
 .form {
   display: flex;

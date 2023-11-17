@@ -24,6 +24,8 @@
   background: #363636;
 }
 
+.cta,
+.background,
 ::-webkit-scrollbar-button,
 ::-webkit-scrollbar-thumb {
   border: 1px solid #fff;
@@ -49,9 +51,8 @@ body {
   padding: 0.5rem 1rem;
   margin: 0 2rem;
   font-family: inherit;
-  color: #fff;
+  color: inherit;
   background-color: #090909;
-  border: 1px solid #fff;
   cursor: pointer;
 }
 
@@ -63,7 +64,6 @@ a:visited {
 
 .background {
   background-color: rgba(0, 0, 0, 0.8);
-  border: 1px solid #fff;
   padding: 2rem;
   margin: 1rem auto;
   max-width: 90%;
@@ -93,7 +93,6 @@ header {
 
 .index-h1 {
   font-size: 25px;
-  color: #fff;
   position: absolute;
   top: 65vh;
   left: 5vw;
@@ -155,6 +154,11 @@ footer {
   color: #ff2a2a;
 }
 
+.back-to-top {
+  position: sticky;
+  bottom: 0;
+}
+
 @media (min-width: 1100px) {
   nav {
     background-color: transparent;
@@ -214,12 +218,10 @@ footer {
   .back-to-top {
     display: flex;
     justify-content: flex-end;
-    position: sticky;
-    bottom: 0;
   }
 
   .active {
-    color: #43ffd0;
+    color: #1ce5ff;
   }
 }
 
