@@ -102,6 +102,18 @@ dialog {
   overflow: hidden;
 }
 
+.close-container {
+  max-width: 100px;
+  margin: 0 auto 5px;
+}
+
+button#close {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  padding: 0.5rem;
+}
+
 /* CSS for contact.html and comments on single-blog.html */
 
 .form {

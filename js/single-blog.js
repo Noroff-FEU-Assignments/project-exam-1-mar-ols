@@ -23,6 +23,9 @@ async function displaySingleBlog() {
                                          <p class="blog-date">${await makeNewDate()}</p>
                                          <p>${blog.content.rendered}</p>
                                          <dialog class="modal-container">
+                                         <div class="close-container">
+                                           <button id="close" aria-label="close">Close X</button>
+                                         </div>
                                          <div class="inner-modal"></div>
                                          </dialog>
                                        </div>
@@ -36,9 +39,14 @@ async function displaySingleBlog() {
       image.addEventListener("click", () => {
         const getModal = document.querySelector(".modal-container");
         const getInnerModal = document.querySelector(".inner-modal");
+        const getCloseBtn = document.querySelector("#close");
 
         getModal.showModal();
         getInnerModal.innerHTML = getImgHTML;
+
+        getCloseBtn.addEventListener("click", () => {
+          getModal.close();
+        });
 
         window.onclick = function (event) {
           if (event.target === getModal) {
