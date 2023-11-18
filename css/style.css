@@ -220,7 +220,7 @@ footer {
     justify-content: flex-end;
   }
 
-  .active {
+  a.active {
     color: #1ce5ff;
   }
 }
