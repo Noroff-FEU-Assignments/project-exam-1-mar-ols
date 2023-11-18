@@ -237,15 +237,15 @@ footer {
 }
 
 @media (max-width: 400px) {
+  .text-logo {
+    margin-left: 1rem;
+  }
+
   h1 {
     font-size: 25px;
   }
 
   .anchor {
     display: none;
-  }
-
-  .ham-menu {
-    max-width: 50px;
   }
 }
