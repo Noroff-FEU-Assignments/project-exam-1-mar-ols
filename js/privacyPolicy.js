@@ -1,4 +1,4 @@
-import { wpPages } from "./api.js";
+import { wpPages } from "./functions/api.js";
 
 async function getPages() {
   const response = await fetch(wpPages);

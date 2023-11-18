@@ -204,12 +204,12 @@ footer {
     display: flex;
     position: static;
     justify-content: center;
+    margin-right: 1.5rem;
   }
 
   nav a {
     display: inline-block;
     padding: 1rem;
-    margin-right: 3rem;
   }
 
   .background {
