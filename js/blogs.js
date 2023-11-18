@@ -34,7 +34,7 @@ async function fetchAndDisplayBlogs() {
                                        <div class="excerpt">
                                          <p>${neaterDate}</p>
                                          <p>${blog.excerpt.rendered}</p>
-                                         <h3><a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}" class="blog-link">Read more..</a></h3>
+                                         <h3><a href="single-blog.html?id=${blog.id}&title=${blog.title.rendered}" class="link">Read more..</a></h3>
                                        </div> 
                                      </div>
                                    </div>`;
