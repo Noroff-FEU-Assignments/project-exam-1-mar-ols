@@ -2,7 +2,7 @@
 
 .scroll-container {
   position: absolute;
-  bottom: 10vh;
+  bottom: 0vh;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
