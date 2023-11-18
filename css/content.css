@@ -103,8 +103,8 @@ dialog {
 }
 
 .close-container {
-  max-width: 100px;
-  margin: 0 auto 5px;
+  max-width: 100%;
+  text-align: center;
 }
 
 button#close {
@@ -246,5 +246,9 @@ button.submit,
 
   .blogs-intro img {
     max-width: 100%;
+  }
+
+  button#close {
+    padding: 0;
   }
 }
