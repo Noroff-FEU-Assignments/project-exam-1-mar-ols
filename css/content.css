@@ -98,6 +98,10 @@ dialog {
   max-width: 80%;
 }
 
+dialog {
+  overflow: hidden;
+}
+
 /* CSS for contact.html and comments on single-blog.html */
 
 .form {
