@@ -48,11 +48,17 @@ async function displaySingleBlog() {
           getModal.close();
         });
 
-        window.onclick = function (event) {
-          if (event.target === getModal) {
+        getModal.addEventListener("click", (event) => {
+          const dialogDimensions = getModal.getBoundingClientRect();
+          if (
+            event.clientX < dialogDimensions.left ||
+            event.clientX > dialogDimensions.right ||
+            event.clientY < dialogDimensions.top ||
+            event.clientY > dialogDimensions.bottom
+          ) {
             getModal.close();
           }
-        };
+        });
       });
     });
   } catch (e) {
