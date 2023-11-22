@@ -155,11 +155,6 @@ footer {
   color: #ff2a2a;
 }
 
-.back-to-top {
-  position: sticky;
-  bottom: 0;
-}
-
 @media (min-width: 1100px) {
   nav {
     background-color: transparent;
