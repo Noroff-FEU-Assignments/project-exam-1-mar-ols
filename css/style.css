@@ -127,6 +127,10 @@ nav a {
   padding: 10px;
 }
 
+a.active {
+  color: #1cfff4;
+}
+
 footer {
   padding-bottom: 1rem;
   background-color: #090909;
@@ -207,6 +211,11 @@ footer {
     padding: 1rem;
   }
 
+  nav a:hover {
+    background-color: #1cfff4;
+    color: #000;
+  }
+
   .background {
     max-width: 1000px;
   }
@@ -214,10 +223,6 @@ footer {
   .back-to-top {
     display: flex;
     justify-content: flex-end;
-  }
-
-  a.active {
-    color: #1ce5ff;
   }
 }
 
