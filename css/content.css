@@ -171,13 +171,7 @@ button.submit,
 
 /* CSS for about.html */
 
-.blog-h1,
-.contact h1,
-.blogs-intro,
-.contact-intro,
-.backBtn-container,
-.about-container h1,
-.single-blog-container h1 {
+.centered-text {
   text-align: center;
 }
 
