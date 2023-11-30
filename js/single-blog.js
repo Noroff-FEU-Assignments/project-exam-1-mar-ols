@@ -18,7 +18,9 @@ async function displaySingleBlog() {
     const getLoaderDiv = document.querySelector(".loader");
     getLoaderDiv.innerHTML = " ";
     singleBlogContainer.innerHTML = `<div class="single-blog">
-                                       <h1>${blog.title.rendered}</h1>
+                                       <h1 class="centered-text">${
+                                         blog.title.rendered
+                                       }</h1>
                                        <div>
                                          <p class="blog-date">${await makeNewDate()}</p>
                                          <p>${blog.content.rendered}</p>
