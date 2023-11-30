@@ -31,9 +31,8 @@
 .individual-blog-container {
   border: 1px solid #fff;
   padding: 2rem;
-  background-color: #141414;
-  opacity: 0.9;
-  box-shadow: 5px 8px rgba(255, 255, 255, 0.8);
+  background-color: rgba(37, 137, 150, 0.9);
+  box-shadow: 5px 8px rgba(255, 255, 255, 0.9);
 }
 
 .blogs-intro img {
