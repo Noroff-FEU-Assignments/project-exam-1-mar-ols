@@ -1,68 +1,68 @@
-## Project Exam 1
+# Project Exam 1
+ <img src="https://www.m-boe.com/wp-content/uploads/2023/12/project-exam-ss.jpg" alt="Screenshot of project exam.">
 
-## Goal
+ ## :beginner: About
+ My project exam for our first semester is a blog that chronicles a trip I took by boat along the Norwegian coast from Larvik in the south, to Tromsø in the north. It consists of 25 blog posts with main focus on pictures from the trip and a small blurb about the days onboard and a comment section for each post.
+ You'll find the following pages:
+ <ul>
+  <li>Index</li>
+  <li>Blog</li>
+  <li>Single blog page</li>
+  <li>About</li>
+  <li>Contact</li>
+  <li>Privacy Policy</li>
+ </ul>
 
-To put into practice the skills learned over your first year of studies.
+ ## :hammer: Built With
+ The page is built with:
+ <ul>
+  <li><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML badge"></li>
+  <li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS badge"></li>
+  <li><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Javascript badge"></li>
+  <li><img src="https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="Wordpress badge"></li>
+ </ul>
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+ ## :zap: Getting stared
+To run my page follow these steps:
 
-### Home Page
-
-The home page should feature a 'Latest Posts' section, designed as a carousel (slider) for the desktop version. As an example, you could display four posts at a time, although you're welcome to adjust this number to better suit your design. Users should be able to click an arrow on the right to scroll through to the next set of posts, and an arrow on the left to view the previous set. For the mobile version, you are free to alter the layout as you deem appropriate, without being tied to a carousel format.
-
-### Blog Page
-
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
-
-### Blog Specific Page
-
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
-
-If images on the blog specific page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
-
-### Contact page
-
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
-
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
-
-### WordPress
-
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
-
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
-
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
-
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
-
-## Level 1 Process
-
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
+<ol>
+ <strong><li>Clone the repo:</li></strong>
+ <pre>git clone git@github.com:Noroff-FEU-Assignments/project-exam-1-mar-ols.git</pre>
+ <strong><li>Install the Live Preview extension in VSCode</li></strong>
+ If you already have Live Preview intalled, you can skip this step.
  
-## Level 2 Process (optional)
+ <strong><li>Click the Go Live button</li></strong>
+ On the bottom right of your VSCode, click the Go Live Button and start browsing.
+</ol>
 
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
+ ## :fire: Contribute
+Suggestions and feedback are always welcome. If you'd like to contribute, you can do the following:
 
+<ol>
+ <strong><li>Report a bug</li></strong>
+ If you find any bugs or errors in my projects, I would love to know. You can contact me <a href="mailto: marte.boe.olsen@gmail.com">here</a>.
+
+ <strong><li>Request a feature</li></strong>
+ Send me an email <a href="mailto: marte.boe.olsen@gmail.com">here</a> if you have any suggestions on how to improve the site. If viable, I will implement it.
+</ol>
+
+## :mailbox: Contact
+To contact me you can find me here:
+
+<strong>
+ <li><a href="mailto: marte.boe.olsen@gmail.com">By email</a></li>
+ <li><a href="https://www.linkedin.com/in/marte-b%C3%B8e-olsen-b538448b/" target="_blank">LinkedIn</a></li>
+  <li><a href="https://www.instagram.com/potetluggen/" target="_blank">Instagram</a></li>
+</strong>
+
+## :star: Acknowledgements
+Thank you to:
+
+<strong>
+<ul>
+ <li><a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik at Flaticon</a></li>
+ <li><a href="https://www.flaticon.com/authors/najmunnahar" target="_blank">NajmunNahar at Flaticon</a></li>
+ <li><a href="https://www.flaticon.com/authors/maxicons" target="_blank">max.icons at Flaticon</a></li>
+ <li><a href="https://youtu.be/ywtkJkxJsdg?si=0vcBd0IaZKmpUCCS" target="_blank">Web Dev Simplified</a></li>
+</ul>
+</strong>
