@@ -83,4 +83,4 @@ backButton();
 
 fetchDisplayExistingComments();
 
-createSubmitNewComments();
+// createSubmitNewComments();
